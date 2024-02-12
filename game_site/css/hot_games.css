@@ -1,0 +1,93 @@
+.hot_games {
+  margin-block: 1rem;
+}
+.hot_games .header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.hot_games .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.hot_games .header .title i {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+.hot_games .header .title h3 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.hot_games .header .see-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.hot_games .header .see-all p {
+  font-weight: 500;
+}
+.hot_games .body {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.hot_games .body .vip-games {
+  width: 59%;
+  padding: 3rem;
+  min-height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(60, 45, 45), rgb(133, 121, 14),rgb(60, 45, 45));
+  border-radius: 5px;
+}
+.hot_games .body .vip-games .about{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: start;
+    gap: 2rem;
+}
+.hot_games .body .vip-games .about .content h2{
+    font-size: 2.5rem;
+    color: var(--main-color);
+}
+.hot_games .body .vip-games .about button{
+    border:2px solid white;
+    border-radius: 5px;
+    background-color: transparent;
+    font-weight: 500;
+    padding: 10px 20px;
+    letter-spacing: 2px;
+}
+.hot_games .body .card{
+    width: 275px;
+    height: 270px;
+}
+.vip-games .ornament img{
+  width: 400px;
+}
+@media screen and (max-width:1200px) {
+  .hot_games .body .vip-games{
+    width: 100%;
+  }
+}
+@media screen and (max-width:830px) {
+  .hot_games .body .vip-games{
+    padding: 1rem;
+    gap: 1rem;
+    flex-wrap: wrap;
+  }
+  .hot_games .body .vip-games .about .content h2{
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .vip-games .ornament img{
+    width: 100%;
+  }
+}

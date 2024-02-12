@@ -1,0 +1,101 @@
+.live_games {
+  margin-block: 1rem 0;
+}
+.live_games .header {
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.live_games .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.live_games .header .title i {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+.live_games .header .title h3 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.live_games .header .see-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.live_games .header .see-all p {
+  font-weight: 500;
+}
+.live_games .body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.live_games .body .live-games {
+  width: 59%;
+  padding: 3rem;
+  min-height: 270px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-image: linear-gradient(
+    to right,
+    rgb(55, 48, 48),
+    rgb(84, 73, 73),
+    rgb(55, 48, 48)
+  );
+  border-radius: 5px;
+}
+.live_games .body .live-games .about {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  gap: 2rem;
+}
+.live_games .body .live-games .about .content h2 {
+  font-size: 2.5rem;
+  color: var(--main-color);
+}
+.live_games .body .live-games .about button {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: 500;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+}
+.live_games .body .card {
+  width: 275px;
+  height: 270px;
+}
+.live-games .ornament img{
+  width: 400px;
+}
+/* -----------media queries---------- */
+@media screen and (max-width:1200px) {
+  .live_games .body .live-games{
+    width: 100%;
+  }
+}
+@media screen and (max-width: 830px) {
+  .live_games .body .live-games {
+    padding: 1rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+}
+@media screen and (max-width: 530px) {
+  .live-games .ornament img{
+    width: 100%;
+  }
+  .live_games .body .live-games .about .content h2 {
+    font-size: 2rem;
+  }
+}

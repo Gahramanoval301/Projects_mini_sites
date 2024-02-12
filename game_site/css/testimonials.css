@@ -1,0 +1,104 @@
+.testimonials {
+  padding: 10px 2rem;
+  background-color: rgb(55, 52, 52);
+}
+.testimonials .header {
+  padding: 1rem 0;
+  display: flex;
+  justify-content: space-between;
+}
+.testimonials .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.testimonials .header .title i {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+.testimonials .header .title h3 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.testimonials .body .comments {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.testimonials .body .comments .comment {
+  width: 474px;
+  background-color: rgb(67, 63, 63);
+  padding: 1.5rem;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+.testimonials .body .comments .comment .comment-header {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.testimonials .body .comments .comment .comment-header .person {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.testimonials .body .comments .comment .comment-header .person .person-image {
+  width: 60px;
+  height: 60px;
+}
+.testimonials
+  .body
+  .comments
+  .comment
+  .comment-header
+  .person
+  .person-info
+  p:nth-child(1) {
+  font-weight: 500;
+}
+.testimonials
+  .body
+  .comments
+  .comment
+  .comment-header
+  .person
+  .person-info
+  p:nth-child(2) {
+  color: #ffffffaf;
+  font-size: 15px;
+  margin-top: 5px;
+}
+.testimonials .body .comments .comment .comment-header .rate {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+.testimonials .body .comments .comment .comment-header .rate p {
+  color: #ffffffaf;
+}
+.testimonials .body .comments .comment .comment-header .rate .stars i {
+  color: yellow;
+}
+.testimonials .body .comments .comment .comment-body p {
+  color: #ffffffaf;
+  line-height: 1.5;
+}
+.testimonials .dots{
+    margin-block: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.testimonials .dots .dot{
+    width:10px ;
+    height: 10px;
+    background-color:rgba(198, 196, 196, 0.765);
+    border-radius: 50%;
+}
+

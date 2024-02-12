@@ -1,0 +1,54 @@
+.supported-cards {
+  background-color: rgb(67, 64, 64);
+  /* padding: 1.5rem 0; */
+}
+.supported-cards .cards-section {
+  background-image: linear-gradient(to right, rgb(60, 57, 57), rgb(74, 68, 68));
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 2rem;
+  justify-content: center;
+  align-items: center;
+}
+.supported-cards .cards-section .cards {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+.supported-cards .cards-section .cards .card {
+  width: 200px;
+}
+.supported-cards .info-supported {
+  padding: 3rem 2rem;
+  background-image: linear-gradient(to right, rgb(86, 81, 81), rgb(82, 76, 76));
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.5rem;
+  border-radius: 16px;
+}
+.supported-cards .info-supported .info {
+  display: flex;
+  gap: 10px;
+}
+.supported-cards .info-supported .info .icon i{
+    color: var(--main-color);
+    font-size: 2rem;
+}
+.supported-cards .copyright{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 2rem;
+    gap: 10px;
+}
+@media screen and (max-width: 960px) {
+  .supported-cards .info-supported{
+    flex-wrap: wrap;
+  }
+}

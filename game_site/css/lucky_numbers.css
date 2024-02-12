@@ -1,0 +1,42 @@
+.lucky_numbers {
+    margin-block: 1rem 0;
+  }
+  .lucky_numbers .header {
+    padding: 1rem 0;
+    display: flex;
+    justify-content: space-between;
+  }
+  .lucky_numbers .header .title {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  .lucky_numbers .header .title i {
+    color: var(--main-color);
+    font-size: 2rem;
+  }
+  .lucky_numbers .header .title h3 {
+    font-weight: 500;
+    letter-spacing: 2px;
+  }
+  .lucky_numbers .header .see-all {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .lucky_numbers .header .see-all p {
+    font-weight: 500;
+  }
+  .lucky_numbers .body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 1rem;
+  }
+  .lucky_numbers .body .card{
+    width: 275px;
+    height: 270px;
+  }

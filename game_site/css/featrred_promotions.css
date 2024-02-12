@@ -1,0 +1,103 @@
+.featrred_promotions {
+  margin-block: 1rem 0;
+  padding: 1rem 0;
+}
+.featrred_promotions .header {
+  padding: 1rem 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.featrred_promotions .header .title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+.featrred_promotions .header .title i {
+  color: var(--main-color);
+  font-size: 2rem;
+}
+.featrred_promotions .header .title h3 {
+  font-weight: 500;
+  letter-spacing: 2px;
+}
+.featrred_promotions .header .see-all {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.featrred_promotions .header .see-all p {
+  font-weight: 500;
+}
+
+.featrred_promotions .body .promotions {
+  display: flex;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+.featrred_promotions .body .promotions .promotion {
+  border-radius: 6px;
+  padding: 3rem;
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+.featrred_promotions .body .promotions .promotion .about {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  flex-wrap: wrap;
+  justify-content: start;
+  align-items: start;
+}
+.featrred_promotions .body .promotions .promotion .about .content h2 {
+  font-size: 2.5rem;
+  color: var(--main-color);
+  margin-bottom: 10px;
+}
+.featrred_promotions .body .promotions .promotion .about button {
+  border: 2px solid white;
+  border-radius: 5px;
+  background-color: transparent;
+  font-weight: 500;
+  padding: 10px 20px;
+  letter-spacing: 2px;
+}
+.featrred_promotions .body .promotions .promotion .ornament img {
+  width: 400px;
+}
+.featrred_promotions .dots {
+  margin-block: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.featrred_promotions .dots .dot {
+  width: 10px;
+  height: 10px;
+  background-color: rgba(198, 196, 196, 0.765);
+  border-radius: 50%;
+}
+
+@media screen and (max-width: 730px) {
+  .featrred_promotions .body .promotions .promotion {
+    padding: 1.5rem;
+    flex-wrap: wrap;
+  }
+  .featrred_promotions .body .promotions .promotion .about .content h2 {
+    font-size: 2rem;
+  }
+}
+@media screen and (max-width: 560px) {
+  .featrred_promotions .body .promotions .promotion {
+    padding: 1rem;
+  }
+  .featrred_promotions .body .promotions .promotion .ornament img {
+    width: 200px;
+  }
+}
