@@ -1,0 +1,201 @@
+@import url("logoSection.css");
+@import url("why_us_section.css");
+@import url("bestEngineers.css");
+@import url("footer.css");
+
+@font-face {
+  font-family: "Poppins 300";
+  src: url("../source/Poppins/Poppins-Light.ttf");
+}
+@font-face {
+  font-family: "Poppins Regular";
+  src: url("../source/Poppins/Poppins-Regular.ttf");
+}
+@font-face {
+  font-family: "Poppins Bold";
+  src: url("../source/Poppins/Poppins-Bold.ttf");
+}
+@font-face {
+  font-family: "Poppins Medium";
+  src: url("../source/Poppins/Poppins-Medium.ttf");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins Regular";
+}
+*::selection {
+  background-color: rgba(249, 137, 39, 0.526);
+}
+:root {
+  --main-color: rgb(249, 137, 39);
+  --secondary-color: white;
+}
+.starting-container {
+  min-height: 90vh;
+}
+.content-section {
+  padding-right: 2rem;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.content-section h5 {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.content-section .content {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+}
+.content-section .content h1 {
+  font-size: 3.5rem;
+}
+.content-section .content h1 span {
+  color: var(--main-color);
+  font-weight: 600;
+}
+.content-section .content .btn_group {
+  display: flex;
+  justify-content: space-evenly;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.content-section .content .btn_group .myBtn {
+  width: 200px;
+  padding: 1rem 2.5rem;
+  border-radius: 2.5rem 0;
+  font-family: "Poppins Medium";
+  transition: all 400ms;
+  box-sizing: border-box;
+}
+.content-section .content .btn_group .btn1 {
+  color: white;
+  background-color: var(--main-color);
+  border: 3px solid transparent;
+}
+
+.content-section .content .btn_group .btn2 {
+  background-color: transparent;
+  border: 3px solid var(--main-color);
+  color: var(--main-color);
+}
+.content-section .content .statistics {
+  margin-top: 2.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+.content-section .content .statistics .statistic h4,
+.content-section .content .statistics .statistic p {
+  font-weight: 600;
+}
+.content-section .content .statistics .statistic {
+  position: relative;
+  z-index: 2;
+}
+.content-section .content .statistics .statistic::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border: 20px solid red;
+  border-color: red transparent transparent red;
+  top: -10px;
+  left: -12px;
+  border-radius: 50%;
+  z-index: -1;
+}
+.content-section .content .statistics .statistic1::before {
+  border-color: var(--main-color) transparent transparent var(--main-color);
+}
+.content-section .content .statistics .statistic2::before {
+  border-color: rgb(121, 188, 190) transparent transparent rgb(121, 188, 190);
+}
+.content-section .content .statistics .statistic3::before {
+  border-color: rgb(3, 141, 3) transparent transparent rgb(3, 141, 3);
+}
+.navbar-image {
+  background-image: url("../source/images/mountain-house.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 0 0 0 45%;
+  position: relative;
+  z-index: 2;
+  color: white;
+  min-height: 90vh;
+}
+.navbar-image::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 0 0 0 45%;
+  right: 0;
+  z-index: -1;
+}
+.navbar-image .navbar {
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.navbar-image .navbar .nav-list {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+}
+.navbar-image .navbar .nav-list * {
+  text-decoration: none;
+  color: white;
+  list-style: none;
+  letter-spacing: 1px;
+}
+.navbar-image .navbar .nav-list li {
+  position: relative;
+}
+.navbar-image .navbar .nav-list li::before {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background-color: var(--main-color);
+  position: absolute;
+  bottom: -10px;
+  left: 45%;
+  box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.368);
+}
+/* ----------extra designs------------- */
+.content-section .content .btn_group .btn1:hover {
+  background-color: transparent;
+  border: 3px solid var(--main-color);
+  color: var(--main-color);
+}
+
+.content-section .content .btn_group .btn2:hover {
+  color: white;
+  background-color: var(--main-color);
+}
+@media screen and (max-width: 500px) {
+  .navbar-image {
+    border-radius: 0;
+    height: auto;
+    max-width: 100%;
+  }
+  .content-section .content h1{
+    font-size: 2rem;
+  }
+  p{
+    font-size: 15px !important;
+  }
+  
+}
