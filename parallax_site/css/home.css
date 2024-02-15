@@ -1,0 +1,29 @@
+.parallax-home {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 20;
+}
+.parallax-home img {
+  position: absolute;
+  pointer-events: none;
+  object-fit: cover;
+}
+.parallax-home #text {
+  position: absolute;
+  font-size: 2.5rem;
+  text-shadow: 0 10px 4px rgba(0, 0, 0, 0.85);
+  top: 80%;
+  left: 6%;
+}
+.parallax-home img#moon,
+.about img#desert-moon {
+  mix-blend-mode: screen;
+  top: 0%;
+}
+/* @media screen and (max-width: 900px) {
+  .parallax-home #text {
+    top: 100%;
+  }
+} */

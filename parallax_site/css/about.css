@@ -1,0 +1,60 @@
+.about {
+  position: relative;
+}
+.about img {
+  position: absolute;
+  z-index: 89;
+  object-fit: cover;
+  pointer-events: none;
+}
+
+.about img.about-waterfall {
+  position: relative;
+  top: -95px;
+}
+
+.about .info-box {
+  position: absolute;
+  top: 0%;
+  left: 10%;
+  width: 50%;
+  z-index: 90;
+  background: var(--bg-color--);
+}
+.about .info-box h2 {
+  font-size: 2.5rem;
+}
+.about .info-box p {
+  margin-bottom: 1.5rem;
+  margin-top: 0.5rem;
+}
+#progress {
+  position: fixed;
+  background-color: #194eb9;
+  z-index: 99;
+  bottom: 60px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  display: none;
+  place-items: center;
+  border-radius: 50%;
+  color: var(--bg-color--);
+  cursor: pointer;
+}
+#progress-value {
+  /* display: block; */
+  height: calc(100% - 12px);
+  width: calc(100% - 12px);
+  background: var(--text-color--);
+  border-radius: 50%;
+  font-size: 30px;
+  display: grid;
+  place-items: center;
+}
+@media screen and (max-width: 905px) {
+  .about .info-box {
+    width: 90%;
+    padding: 1rem;
+  }
+}
